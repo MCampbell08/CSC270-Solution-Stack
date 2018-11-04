@@ -8,7 +8,7 @@ $query = "DELETE FROM people WHERE id = ".$mysqli->real_escape_string($_GET['id'
 //execute query
 if( $mysqli->query($query) ){
     //if successful deletion
-    header("Location: index.php"); /* Redirect browser, MUST occur before anything is output to page */
+    header("Location: ..\front-end\index.php"); /* Redirect browser, MUST occur before anything is output to page */
     exit();
 }else{
     //if there's a database problem

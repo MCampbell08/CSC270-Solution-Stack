@@ -5,6 +5,7 @@
 <table class="gridtable">
   <tr>
     <th>Id</th>
+    <th>Name</th>
     <th>Board</th>
     <th>Trucks</th>
     <th>Wheels</th>
@@ -15,7 +16,7 @@
   </tr>
   <?php
 
-include 'dbconfig.php';
+include 'C:\wamp64\www\basics\CSC270-Solution-Stack\apis_are_not_pun\back-end\dbconfig.php';
 
 $query = "select * from decks";
 
@@ -30,13 +31,14 @@ if( $num_results > 0){
 
         echo "<tr>";
         echo "        <td>{$id}</td>";
+        echo "        <td>{$name}</td>";
         echo "        <td>{$board}</td>";
         echo "        <td>{$trucks}</td>";
         echo "        <td>{$wheels}</td>";
         echo "        <td>{$created}</td>";
         echo "        <td>{$updated}</td>";
         echo "        <td><a href='edit.php?id={$id}'>Edit</a></td>";
-        echo "        <td><a href='delete_person.php?id={$id}'>Delete</a></td>";
+        echo "        <td><a href='..\back-end\delete_deck.php?id={$id}'>Delete</a></td>";
         echo "    </tr>";
     }
 
