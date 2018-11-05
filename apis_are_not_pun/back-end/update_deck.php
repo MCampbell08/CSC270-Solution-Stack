@@ -2,7 +2,7 @@
 
 include 'dbconfig.php';
 
-$query = "update deck
+$query = "update decks
     set 
     name = '".$mysqli->real_escape_string($_POST['name'])."',
     board = '".$mysqli->real_escape_string($_POST['board'])."',
@@ -11,8 +11,8 @@ $query = "update deck
     bearings = '".$mysqli->real_escape_string($_POST['bearings'])."'
     where id='".$mysqli->real_escape_string($_REQUEST['id'])."'";
 
-    if($mysqli->query($query)){
-        header("Location: index.php");
+    if( $mysqli->query($query) ){
+        header("Location: ..\front-end\index.php");
         exit();
     } else {
         echo "Database Error: Unable to update record.";

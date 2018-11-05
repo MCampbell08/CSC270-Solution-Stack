@@ -23,3 +23,9 @@ table.gridtable td {
     border-color: #666666;
     background-color: #ffffff;
 }
+
+title {
+    background-color: #333333;
+    width: 100%;
+    color: aquamarine;
+}

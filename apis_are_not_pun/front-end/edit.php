@@ -51,7 +51,7 @@ $bearings = $row['bearings'];
         <option value="Thunder">Thunder</option>
     </select>
     <br>
-    <label for="wheels">Trucks: </label>
+    <label for="wheels">Wheels: </label>
     <select type="text" name="wheels" >
         <option selected='<?php echo $wheels;  ?>'><?php echo $wheels;  ?></option>
         <option value="Bones">Bones</option>
@@ -61,14 +61,14 @@ $bearings = $row['bearings'];
         <option value="Santa_Cruz">Santa Cruz</option>
     </select>
     <br>
-    <label for="bearings">Trucks: </label>
+    <label for="bearings">Bearings: </label>
     <select type="text" name="bearings" >
         <option selected='<?php echo $bearings;  ?>'><?php echo $bearings;  ?></option>
         <option value="Bones">Bones</option>
-        <option value="Grizzly">Guizzly</option>
+        <option value="Grizzly">Grizzly</option>
         <option value="Flip">Flip</option>
         <option value="DGK">DGK</option>
-        <option value="Diamond">Diamoond</option>
+        <option value="Diamond">Diamond</option>
     </select>
     <br>
     <input type="submit" value="Update Deck">

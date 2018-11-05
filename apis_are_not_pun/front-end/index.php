@@ -9,6 +9,7 @@
     <th>Board</th>
     <th>Trucks</th>
     <th>Wheels</th>
+    <th>Bearings</th>
     <th>Created</th>
     <th>Updated</th>
     <th></th>
@@ -16,7 +17,7 @@
   </tr>
   <?php
 
-include 'C:\wamp64\www\basics\CSC270-Solution-Stack\apis_are_not_pun\back-end\dbconfig.php';
+include '..\back-end\dbconfig.php';
 
 $query = "select * from decks";
 
@@ -35,6 +36,7 @@ if( $num_results > 0){
         echo "        <td>{$board}</td>";
         echo "        <td>{$trucks}</td>";
         echo "        <td>{$wheels}</td>";
+        echo "        <td>{$bearings}</td>";
         echo "        <td>{$created}</td>";
         echo "        <td>{$updated}</td>";
         echo "        <td><a href='edit.php?id={$id}'>Edit</a></td>";
@@ -43,7 +45,7 @@ if( $num_results > 0){
     }
 
 }else{
-    //if database table is empty
+    //if database table is empty  
 }
 
 //disconnect from database
